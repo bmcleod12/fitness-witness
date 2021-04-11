@@ -1,7 +1,7 @@
 {
-  "name": "mongoose_skeleton",
+  "name": "fitness_witness",
   "version": "1.0.0",
-  "description": "",
+  "description": "An app to track workouts and progress",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,5 +15,13 @@
     "express": "^4.16.3",
     "mongoose": "^5.3.16",
     "morgan": "^1.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmcleod12/fitness-witness.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bmcleod12/fitness-witness/issues"
+  },
+  "homepage": "https://github.com/bmcleod12/fitness-witness#readme"
 }
