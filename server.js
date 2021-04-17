@@ -15,7 +15,32 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populatedb", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {  
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false
+});
+
+db.Workout.create({
+  day: new Date().setDate(new Date().getDate()-10),
+  exercises: [
+    {
+      type: "resistance",
+      name: "Bicep Curl",
+      duration: 20,
+      weight: 100,
+      reps: 10,
+      sets: 4
+    }
+  ]
+})
+.then(newworkout => {
+  console.log(newworkout);
+})
+.catch(({ message }) => {
+  console.log(message);
+});
 
 
 app.listen(PORT, () => {

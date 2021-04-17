@@ -124,8 +124,18 @@ let workoutSeed = [
   }
 ];
 
-db.Workout.deleteMany({})
-  .then(() => db.Workout.collection.insertMany(workoutSeed))
+// db.Workout.deleteMany({})
+//   .then(() => db.Workout.collection.insertMany(workoutSeed))
+//   .then(data => {
+//     console.log(data.result.n + " records inserted!");
+//     process.exit(0);
+//   })
+//   .catch(err => {
+//     console.error(err);
+//     process.exit(1);
+//   });
+
+db.Workout.insertMany(workoutSeed)
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
@@ -134,3 +144,14 @@ db.Workout.deleteMany({})
     console.error(err);
     process.exit(1);
   });
+
+
+// db.workout.insert(
+//   {"day": new Date(new Date().setDate(new Date().getDate() - 2)),
+//     "exercises": [{ type: "resistance", name: "Lateral Pull", duration: 20, weight: 250, reps: 12, sets: 4 }]}
+// )
+
+// db.Workout.insert(
+//   {"day": new Date(new Date().setDate(new Date().getDate() - 2)),
+//     "exercises": [{ type: "resistance", name: "Lateral Pull", duration: 20, weight: 250, reps: 12, sets: 4 }]}
+// )
