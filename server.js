@@ -22,26 +22,6 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useFindAndModify: false
 });
 
-db.Workout.create({
-  day: new Date().setDate(new Date().getDate()-10),
-  exercises: [
-    {
-      type: "resistance",
-      name: "Bicep Curl",
-      duration: 20,
-      weight: 100,
-      reps: 10,
-      sets: 4
-    }
-  ]
-})
-.then(newworkout => {
-  console.log(newworkout);
-})
-.catch(({ message }) => {
-  console.log(message);
-});
-
 app.use(require("./routes/apiroutes"));
 app.use(require("./routes/htmlroutes"));
 
