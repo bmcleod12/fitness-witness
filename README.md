@@ -19,3 +19,13 @@ You are required to submit the following:
 * The URL to the deployed application
 
 * The URL to the GitHub repository
+
+
+<img alt="Freshly loaded app." src="./public/assets/index.PNG"/>
+
+<img alt="Dashboard page." src="./public/assets/stats.PNG"/>
+
+<img alt="Adding a new exercise through the form." src="./public/assets/newexercise.PNG"/>
+
+<img alt="Newest recorded exercise now on the home page." src="./public/assets/updatedindex.PNG"/>
+
