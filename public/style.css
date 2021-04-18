@@ -7,8 +7,7 @@
 }
 
 html,
-body,
-.wrapper {
+body {
   height: 100%;
 }
 
@@ -21,8 +20,8 @@ nav {
   color: #ffffff;
   height: 80px;
   padding: 10px;
-  line-height: 3;
-  font-size: 1.2rem;
+  line-height: 1;
+  font-size: 2rem;
 }
 
 a,
