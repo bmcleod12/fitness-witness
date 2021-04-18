@@ -16,7 +16,7 @@ body {
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: #003f5c;
   color: #ffffff;
   height: 80px;
   padding: 10px;
@@ -371,10 +371,6 @@ form > button {
   margin-bottom: 5px;
 }
 
-/* .workout .card {
-  width: 350px;
-} */
-
 .prev-workout button {
   margin: 10px;
 }
@@ -404,6 +400,7 @@ form > button {
 .buttons .ui.button {
   margin: 0;
   width: 50%;
+  padding: 25px;
 }
 
 .ui.card h2 {
