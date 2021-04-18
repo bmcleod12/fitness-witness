@@ -13,6 +13,7 @@ body {
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(247, 247, 247);
 }
 
 nav {
@@ -137,7 +138,7 @@ form::after {
 }
 
 .exercise .ui.card {
-  width: 400px;
+  width: 600px;
   max-width: 600px;
 }
 
